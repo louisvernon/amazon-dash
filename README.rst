@@ -67,12 +67,26 @@ Hack your Amazon Dash to run what you want. Without welders. For the entire fami
 
     sudo amazon-dash run
 
+
+
 Contents
 ========
+- `Using Docker <#using-docker>`_.
 - `Avoid making a purchase by pressing the button <#avoid-making-a-purchase-by-pressing-the-button>`_.
 - `Examples <#examples>`_
 - `Troubleshooting <#troubleshooting>`_
 - `References <#references>`_
+
+Using Docker
+============
+If you have Docker installed you can use the pre-built amazon-dash Docker image.
+
+.. code:: bash
+
+    docker run --net=host -it amazondash/amazondash amazon-dash discover
+    docker run --net=host -it amazondash/amazondash amazon-dash run
+
+
 
 
 Avoid making a purchase by pressing the button
